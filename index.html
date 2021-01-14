@@ -1,19 +1,62 @@
-<html>
+<!DOCTYPE html>
     <head>
         <style>
             h1 {text-align: center;}
             h2 {text-align: center;}
             h3 {text-align: center;}
             p {text-align: center;}
-            img {text-align: center;}
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
             div {text-align: center;}
+            header {text-align: center;}
+            footer {text-align: center;}
+            aside {text-align: center;}
+            nav {text-align: center;}
+            table {text-align: center;}
+            figcaption {text-align: center;}
+            video {
+                display: block;
+                margin: 0 auto;
+            }
+            audio {
+                display: block;
+                margin: 0 auto;
+            }
+            canvas {
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
         </style>
-        <title>The Evolution of Classical Memes post-2020</title>
+
+        <header class="page-header">
+            <title>The Evolution of Classical Memes post-2020</title>   
+        </header>
+        
+
         <meta charset="utf-8">
             <link href="/media/examples/link-element-example.css" rel="stylesheet">
             <p style="font-family:verdana; font-size:large">The Evolution of Doge post-2020</p>
 
         <meta http-equiv="refresh">
+
+        <nav class="crumbs">
+            <ol>
+                <li class="crumb"><a href="#">Memes</a></li>
+                <li class="crumb"><a href="#">Classic Memes</a></li>
+                <li class="crumb"><a href="#">Modern Memes</a></li>
+            </ol>
+        </nav>
         
     </head>
 
@@ -28,23 +71,232 @@ choose 10 of input
             
             <section>
                 <h1>Classical Doge</h1>
+                <header>STUFF</header>
                 <p>Let's start with good old <span class = "meme">Doge</span>. Doge started as an innocent meme that simply was a list of incorrectly adverbs and adjectives as seen below:</p>
 
-                <a href="link" style="text-align: center">
-                    <img src="doge_meme.webp" align="center"></a>
-                <div>The most well known Doge Meme</div>
+                <figure>
+                    <img src=doge_meme.webp alt="Doge" class="center">
+                    <figcaption>The most well known Doge Meme</figcaption>
+                </figure>
+
+                <div>Doge has been featured in many medias including</div>
+                <ul>
+                    <li>news</li>
+                    <li>movies</li>
+                    <li>music</li>
+                    <li>sports</li>
+                </ul>
+
+                <aside>Now we shall speak about <pre>Doge</pre> past 2020</aside>
 
 
             </section>
 
-            <hr color="red">
+            <hr color="brown">
 
             <section>
                 <h2>Modern Doge</h2>
-                <p>However, now Doge has evolved into a whole host of dog characters to represent different parts of society</p>
+                <p>However, now <strong>Doge</strong> has evolved into a whole host of dog characters to represent different parts of society</p>
+                <p>Doge has become a symbol of the internet as in 2020, <code>Doge</code> was voted <i>MEME OF THE DECADE</i></p>
             </section>
 
+            <p>Since 2020 began, many spin offs of Doge have been made:</p>
+            <ol>
+                <li>Cheemsburbger</li>
+                <li>Uncle Murphy</li>
+                <li>Walter</li>
+                <li>Perro</li>
+                <li>Lil' Bro</li>
+                <li>Big Bro</li>
+            </ol>
+
+            <figure>
+                <img src=cheems_child.png alt="Paris" class="center" style="width:35%">
+                <figcaption>Cheems as a child</figcaption>
+            </figure>
+
+            <p>Cheemsburbger <em>(see image above)</em> is one of the most beloved doge spinoffs. Cheems is a "doge" with a speech impediment and despite his struggles with bullying, he lived a great life</p>
+            <p>He found and married a girl he loved and became an astronaut. Yet despite his success, his dream is what eventually led to his demise.</p>
+
+            <video controls width="500">
+                <source src="cheems_moon.mp4" type="video/mp4">
+            </video>
+
+            <p>Here is Cheems voice in isolation</p>
+            <audio
+                controls
+                src="/media/cc0-audio/t-rex-roar.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+
+            <p>Here you can see how Doge evolved from a simple humorous grammatical joke into a complex narrative device to create stories with, often employing dark humor</p>
+            <p>to convey the struggles, dreams, and lives of younger generations</p>
+
+            <details>
+                <summary>In short, Classic Doge is all about lighthearted fun while modern doge is more about real life struggles</summary>
+            </details>
+
+            <iframe id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="300"
+                height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe>
+
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="name">Empty Text Box: </label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-example">
+                    <input type="submit" value="Subscribe!">
+                </div>
+            </form>
+
+            <form>
+                <fieldset>
+                  <legend>Choose your favorite Doge Character</legend>
+              
+                  <input type="radio" id="doge" name="dogelore">
+                  <label for="kraken">Doge</label><br/>
+              
+                  <input type="radio" id="cheems" name="dogelore">
+                  <label for="sasquatch">Cheems</label><br/>
+              
+                  <input type="radio" id="murph" name="dogelore">
+                  <label for="mothman">Uncle Murphy</label>
+                </fieldset>
+            </form>
+
+            <label for="dino-select">Choose a doge:</label>
+            <select id="dino-select">
+                <optgroup label="Classic">
+                    <option>Doge</option>
+
+                </optgroup>
+                <optgroup label="Modern">
+                    <option>Cheems</option>
+                    <option>Uncle Murphy</option>
+                    <option>Isabelle</option>
+                    <option>Walter</option>
+                    <option>Karen</option>
+                    <option>Lil' Bro</option>
+                </optgroup>
+            </select>
+
+            <table>
+                <caption>Classic vs Modern Doge</caption>
+                <colgroup>
+                    <col>
+                    <col span="2" class="doge">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="col">Classical Doge</th>
+                        <th scope="col">Modern Doge</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Lighthearted</li>
+                                <li>Focused on bad grammar</li>
+                                <li>Used to emphasis excitement</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Often dark or wholesome from an adult perspective</li>
+                                <li>Focused on the struggles of life</li>
+                                <li>Used to create stories</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <label for="pet-select">Choose a meme:</label>
+            <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="doge">Doge</option>
+                <option value="murph">Uncle Murphy</option>
+                <option value="walter">Walter</option>
+                <option value="isabelle">Isabelle</option>
+                <option value="karen">Karen</option>
+                <option value="lilbro">Lil' Bro</option>
+            </select>
+
+            <p>Input types:</p>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+            
+            <p></p>
+            <input type="button" id="name" name="name" required minlength="4" maxlength="8" size="10">
+            
+            <p></p>
+            <div>
+                <input type="color" id="head" name="head"
+                       value="#e66465">
+                <label for="head">Head</label>
+            </div>
+            
+            <p></p>
+            <div>
+                <input type="checkbox" id="scales" name="scales"
+                       checked>
+                <label for="scales">Scales</label>
+            </div>
+            
+            <p></p>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+            
+            <p></p>
+            <input type="file"
+            id="dogelore" name="doge"
+            accept="image/png, image/jpeg">
+
+            <p></p>
+            <label for="memes">Number of memes (10-1000000000):</label>
+            <input type="number" id="memes" name="memes" min="1" max="1000000000">
+
+            <p></p>
+            <label for="email">Enter your google email:</label>
+            <input type="email" id="email" pattern=".+@gmail.com" size="30" required>
+
+            <p>Audio settings:</p>
+            <div>
+            <input type="range" id="volume" name="volume"
+                    min="0" max="11">
+            <label for="volume">Volume</label>
+            </div>
+
+            <p></p>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+
+
+
+            <hr color="brown">
+
+            <textarea id="story" name="story" rows="5" cols="33">
+                    Thanks for reading
+            </textarea>
+
+            <section>
+                <h3>All Rights Reserved</h3>
+                <footer>Doge Inc.</footer>
+            </section>
+
+            <nav>all terms limited</nav>
+
+            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+                <circle cx="50" cy="50" r="40" />
+            </svg>
+
+            <canvas width="100" height="100">
+
+            </canvas>
         </main>
     </body>
-
+    
 </html>
