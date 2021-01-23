@@ -1,43 +1,55 @@
 <!DOCTYPE html>
     <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <style>
-            h1 {text-align: center;}
-            h2 {text-align: center;}
-            h3 {text-align: center;}
-            p {text-align: center;}
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+            @import url('http://fonts.googleapis.com/css?family=Kavoon');
+
+            p.dotted {
+                border-style: dotted;
+                border-color: aquamarine;
+                border-width: 0.01cm;
+                border-radius: 0.5em;
             }
-            ul {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+
+            p.solid {
+                border-style: solid;
+                border-color: royalblue;
+                border-width: 0.07cm;
+                border-radius: 0.2em;
             }
-            div {text-align: center;}
-            header {text-align: center;}
-            footer {text-align: center;}
-            aside {text-align: center;}
-            nav {text-align: center;}
-            table {text-align: center;}
-            figcaption {text-align: center;}
-            video {
-                display: block;
-                margin: 0 auto;
+ 
+            p.groove {
+                border-style: groove;
+                border-color: yellowgreen;
+                border-width: 0.07cm;
+                border-radius: 0.2em;
+            }               
+
+            a[target=_blank] {
+                background-color: yellow;
             }
-            audio {
-                display: block;
-                margin: 0 auto;
+            a:link {
+                color: red;
             }
-            canvas {
-                padding-left: 0;
-                padding-right: 0;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
+
+            /* visited link */
+            a:visited {
+                color: green;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: orange;
+            }
+
+            /* selected link */
+            a:active {
+                color: blue;
             }
         </style>
+
+
 
         <header class="page-header">
             <title>The Evolution of Classical Memes post-2020</title>   
@@ -60,32 +72,54 @@
         
     </head>
 
-choose 10 of input
-    <body style="background:burlywood">
+    <body>
         <link href="/media/examples/link-element-example.css" rel="stylesheet">
         <main>
-            <p style="color:darkgrey">Memes have always had a subtle tinge of  <b>dark</b> humor, however with the return of classical memes
+            <p class="dotted" style="color:brown">Memes have always had a subtle tinge of  <b>dark</b> humor, however with the return of classical memes
                 we all love and cherish</p>
-            <p style="color:black">Such as <code>doge</code> and <code>trollface</code> the depression of 2020 and overall negative outlook towards 
+            <p class="solid" style="color:black">Such as <code>doge</code> and <code>trollface</code> the depression of 2020 and overall negative outlook towards 
                 the future have resulted in some rather twisted memes of once light-hearted characters.</p>
             
             <section>
                 <h1>Classical Doge</h1>
                 <header>STUFF</header>
-                <p>Let's start with good old <span class = "meme">Doge</span>. Doge started as an innocent meme that simply was a list of incorrectly adverbs and adjectives as seen below:</p>
+                <p class="groove">Let's start with good old <span class = "meme">Doge</span>. Doge started as an innocent meme that simply was a list of incorrectly adverbs and adjectives as seen below:</p>
 
                 <figure>
                     <img src=doge_meme.webp alt="Doge" class="center">
                     <figcaption>The most well known Doge Meme</figcaption>
+                    <p></p>
                 </figure>
 
-                <div>Doge has been featured in many medias including</div>
-                <ul>
-                    <li>news</li>
-                    <li>movies</li>
-                    <li>music</li>
-                    <li>sports</li>
-                </ul>
+                <div class="class1">Doge has been featured in many medias including</div>
+                <div class="class2">
+                    <ul>
+                        <li>news</li>
+                        <li>movies</li>
+                        <li>music</li>
+                        <li>sports</li>
+                    </ul>
+                </div>
+
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>  
+                  </div>
+
+                <p>Here is a thin blue line :P</p>
+
+                <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                  </div>
 
                 <aside>Now we shall speak about <pre>Doge</pre> past 2020</aside>
 
@@ -96,18 +130,19 @@ choose 10 of input
 
             <section>
                 <h2>Modern Doge</h2>
-                <p>However, now <strong>Doge</strong> has evolved into a whole host of dog characters to represent different parts of society</p>
-                <p>Doge has become a symbol of the internet as in 2020, <code>Doge</code> was voted <i>MEME OF THE DECADE</i></p>
+                <p>However, now <strong id=doge>Doge</strong> has evolved into a whole host of dog characters to represent different parts of society</p>
+                <p>Doge has become a symbol of the internet as in 2020, <code id=doge>Doge</code> was voted <i>MEME OF THE DECADE</i></p>
             </section>
 
             <p>Since 2020 began, many spin offs of Doge have been made:</p>
+            <p></p>
             <ol>
-                <li>Cheemsburbger</li>
-                <li>Uncle Murphy</li>
-                <li>Walter</li>
-                <li>Perro</li>
-                <li>Lil' Bro</li>
-                <li>Big Bro</li>
+                <li><p id=doge>Cheemsburbger</p></li>
+                <li><p id=doge>Uncle Murphy</p></li>
+                <li><p id=doge>Walter</p></li>
+                <li><p id=doge>Perro</p></li>
+                <li><p id=doge>Lil' Bro</p></li>
+                <li><p id=doge>Big Bro</p></li>
             </ol>
 
             <figure>
@@ -132,6 +167,8 @@ choose 10 of input
 
             <p>Here you can see how Doge evolved from a simple humorous grammatical joke into a complex narrative device to create stories with, often employing dark humor</p>
             <p>to convey the struggles, dreams, and lives of younger generations</p>
+
+            <a href="http://www.disney.com" target="_blank">disney.com</a>
 
             <details>
                 <summary>In short, Classic Doge is all about lighthearted fun while modern doge is more about real life struggles</summary>
@@ -272,9 +309,6 @@ choose 10 of input
             <p></p>
             <label for="phone">Enter your phone number:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-
-
 
             <hr color="brown">
 

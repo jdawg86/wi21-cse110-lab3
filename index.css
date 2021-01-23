@@ -1,11 +1,141 @@
+body {
+  background-color: burlywood;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: darkgreen;
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+}
+
+.flex-container
+{
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div
+{
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+#doge {
+  color: seagreen;
+}
   
-  ul {
-    text-align: center;
-    list-style: inside;
-  }
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+h1,h2,h3 {
+  text-align: center;
+  color: navy;
+  margin-left: 20px;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+p {text-align: center;}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div, header, footer, aside, nav, table, figcaption {text-align: center;}
+
+div ul {
+  background-color: teal;
+}
+
+div ~ p {
+  background-color: blue;
+  color: white;
+}
+
+p + aside {
+  background-color: orange;
+}
+
+div.class1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.class2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ul > li {
+  margin: 1em;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+}
+
+audio {
+  display: block;
+  margin: 0 auto;
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
